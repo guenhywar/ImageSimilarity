@@ -1,0 +1,18 @@
+annotator:
+  implementation: rs_imsim
+  name: imsim
+
+parameters:
+  otherCASId: mongo_w_ue4bs
+  semantic_label: true
+  min_samples_split: 2
+  max_depth: 1
+  max_features: 2
+  useRTree: false
+  logRegThreshold: 0.8
+  training_data: /home/ros/catkin_ws/src/image_similarity/TrainingData/AlteSachen/similarity_for_ros_label_NoICP.csv
+  classify_data: /home/ros/catkin_ws/src/image_similarity/TrainingData/AlteSachen/similarity_for_ros_train_NoICP.csv
+  ground_truth: /home/ros/catkin_ws/src/image_similarity/TrainingData/AlteSachen/similarity_for_ros_truth_NoICP.csv
+capabilities:
+  inputs: {}
+  outputs: {}

@@ -1,0 +1,9 @@
+annotator:
+  implementation: rs_baseline
+  name: baselineClassifier
+
+parameters:
+  otherCASId: mongo_w_ue4bs
+capabilities:
+  inputs: {}
+  outputs: {}

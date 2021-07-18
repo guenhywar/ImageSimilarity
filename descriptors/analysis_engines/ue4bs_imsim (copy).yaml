@@ -1,0 +1,20 @@
+ae:
+  name: ue4bs_imsim
+fixedflow:
+  - BeliefStateCameraUpdater
+  - BeliefStateObjectSynchronization
+  - CollectionReader
+  - ImagePreprocessor
+  - PointCloudFilter
+  - NormalEstimator
+  - BeliefStateSensorVisualizer
+  - BeliefStateSegmentationAnnotator
+  - BeliefStatePoseRefinement
+  - SimClusterColorFromBeliefState
+  - ImageSimilarity
+  - ImageSimilarityPointCloud
+  - SimilaritySummarizer
+CollectionReader:
+  camera_config_files: ['config_bs_unreal_vision.ini']
+
+

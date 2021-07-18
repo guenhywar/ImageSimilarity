@@ -1,0 +1,9 @@
+annotator:
+  implementation: rs_SimClusterColorFromBeliefState
+  name: SimClusterColorFromBeliefState
+parameters:
+  otherCASId: mongo_w_ue4bs
+  semantic_label: true
+capabilities:
+  inputs: {}
+  outputs: {}

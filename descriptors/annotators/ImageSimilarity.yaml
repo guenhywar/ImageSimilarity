@@ -1,0 +1,8 @@
+annotator:
+  implementation: rs_ImageSimilarity
+  name: ImageSimilarity
+parameters:
+  otherCASId: mongo_w_ue4bs
+capabilities:
+  inputs: {}
+  outputs: {}

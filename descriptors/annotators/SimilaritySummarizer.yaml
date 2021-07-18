@@ -1,0 +1,15 @@
+annotator:
+  implementation: rs_SimilaritySummarizer
+  name: SimilaritySummarizer
+parameters:
+  otherCASId: mongo_w_ue4bs
+  min_samples_split: 7
+  max_depth: 5
+  max_features: 3
+  training_data: /home/ros/catkin_ws/src/image_similarity/TrainingData/similarity_for_ros_train.csv
+  classify_data: /home/ros/catkin_ws/src/image_similarity/TrainingData/similarity_for_ros_label.csv
+  ground_truth: /home/ros/catkin_ws/src/image_similarity/TrainingData/similarity_for_ros_truth.csv
+capabilities:
+  inputs: {}
+  outputs: {}
+

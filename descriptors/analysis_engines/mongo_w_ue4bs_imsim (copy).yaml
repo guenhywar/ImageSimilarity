@@ -1,0 +1,26 @@
+ae:
+  name: mongo_w_ue4bs
+fixedflow:
+#  - Trigger
+  - CollectionReader
+  - ImagePreprocessor
+  - RegionFilter
+  - NormalEstimator
+  - PlaneAnnotator
+  - PointCloudClusterExtractor
+  - ClusterMerger
+  - Cluster3DGeometryAnnotator
+  - ClusterColorHistogramCalculator
+  - CaffeAnnotator
+  - KnnAnnotator
+  - ObjectIdentityResolution
+CollectionReader:
+  camera_config_files: ['config_mongodb_playback.ini']
+RegionFilter:
+  enable_change_detection: false
+ClusterColorHistogramCalculator:
+  semantic_label: true
+KnnAnnotator:
+  class_label_mapping: extracted_feats/BVLC_REF_ClassLabel_ue4objects2020.txt
+  default_k: 15
+  training_data: extracted_feats/BVLC_REF_data_ue4objects2020.yaml
